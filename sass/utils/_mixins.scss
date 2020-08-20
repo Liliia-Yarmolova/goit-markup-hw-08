@@ -1,0 +1,23 @@
+@mixin hero-title() {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $title-grey-theme-color;
+}
+
+@mixin transition($property, $td: 250ms, $tf: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $property;
+  transition-duration: $td;
+  transition-timing-function: $tf;
+}
+
+@mixin logo() {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: #000000;
+}

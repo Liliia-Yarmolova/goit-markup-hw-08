@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-white-color;
+  font-family: $main-font;
+  font-size: 14px;
+  color: $title-color;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.address {
+  font-style: normal;
+  // display: flex;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}

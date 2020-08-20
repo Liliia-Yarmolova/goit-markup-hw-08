@@ -1,0 +1,32 @@
+/* WHAT WE DO */
+.what-we-do {
+  &.section {
+    padding-top: 0;
+  }
+
+  .subtitle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $title-grey-theme-color;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
+
+.what-we-do-list {
+  display: flex;
+
+  &-item {
+    position: relative;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

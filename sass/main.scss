@@ -1,0 +1,27 @@
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './base/base';
+@import './components/container';
+@import './components/description';
+@import './components/filter-btn';
+@import './components/logo';
+@import './components/modal';
+@import './components/modal-btn';
+@import './components/overlay';
+@import './components/section';
+@import './components/social-links';
+@import './components/subtitle';
+@import './components/text';
+@import './components/title';
+@import './components/wrapper';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/our-values';
+@import './layout/what-we-do';
+@import './layout/our-team';
+@import './layout/our-clients';
+@import './layout/our-projects';
+@import './layout/footer';
