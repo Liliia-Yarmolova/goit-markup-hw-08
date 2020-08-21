@@ -1,27 +1,78 @@
 /*OUR VALUES*/
-
 .our-values-list {
-  display: flex;
+  display: block;
 
   &-img {
     display: block;
-    width: 270px;
+    width: 450px;
     height: 120px;
     padding-top: 25px;
-    padding-right: 100px;
     padding-bottom: 25px;
-    padding-left: 100px;
     margin-bottom: 30px;
-
     background: #f5f4fa;
     border-radius: 4px;
   }
-
   &-item {
-    width: 270px;
+    width: 450px;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-values-list {
+    &-img {
+      padding-right: 190px;
+      padding-left: 190px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-values-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-img {
+      width: 354px;
+      padding-right: 142px;
+      padding-left: 142px;
+    }
+
+    &-item {
+      width: 354px;
+      // margin-right: 30px;
+
+      &:not(:nth-child(even)) {
+        margin-right: 30px;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-values-list {
+    display: flex;
+
+    &-img {
+      display: block;
+      width: 270px;
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+
+    &-item {
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }

@@ -1,13 +1,5 @@
 .logo {
   @include logo();
-  // font-family: $secondary-font;
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.192;
-  // color: #000000;
-  // margin-right: 85px;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
 
   &-accent {
     color: $accent-color;
@@ -26,15 +18,15 @@
     margin-right: 81px;
     padding-top: 26px;
     padding-bottom: 26px;
-    font-size: 24px;
-    line-height: 1.167;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 85px;
+    font-size: 26px;
     padding-top: 24px;
     padding-bottom: 25px;
+    line-height: 1.192;
   }
 }
