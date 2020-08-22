@@ -62,12 +62,6 @@
   fill: currentColor;
 }
 
-// @media screen and (min-width: 480px) {
-//   .container {
-//     width: 480px;
-//   }
-// }
-
 @media screen and (max-width: 767px) {
   .header {
     max-width: 480px;
@@ -82,7 +76,9 @@
     background-color: transparent;
     border: none;
 
+    &:hover .icon-close-menu,
     &:focus .icon-close-menu,
+    &:hover .icon-open-menu,
     &:focus .icon-open-menu {
       fill: $accent-color;
     }
@@ -114,9 +110,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     transform: translateY(-101%);
-    transition: transform 500ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
+      z-index: 1;
       display: block;
       transform: translateY(0);
     }
