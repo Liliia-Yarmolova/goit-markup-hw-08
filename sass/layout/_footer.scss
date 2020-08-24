@@ -100,7 +100,8 @@
 
   input {
     height: 50px;
-    margin-right: 12px;
+    // margin-right: 12px;
+    // margin-bottom: 20px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -117,14 +118,6 @@
 .icon-send {
   margin-left: 10px;
   fill: $modal-btn-blue-theme-color;
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    .container {
-      display: block;
-    }
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -145,11 +138,24 @@
   }
 
   .sing-up-form-element {
-    display: block;
-
     input {
-      width: 450px;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    .container {
+      display: block;
+    }
+  }
+
+  .sing-up-form-element {
+    input {
+      // width: 450px;
+      width: 100%;
+      // margin-bottom: 20px;
     }
   }
 }
@@ -160,6 +166,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+    }
+  }
+  .sing-up-form-element {
+    input {
+      width: 450px;
     }
   }
 }
@@ -189,6 +200,7 @@
 
     input {
       width: 358px;
+      margin-right: 12px;
     }
   }
 }
